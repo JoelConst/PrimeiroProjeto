@@ -1,0 +1,58 @@
+body {
+    background:  rgb(182, 215, 223);
+
+    margin: 0;
+    
+}
+
+footer { 
+       color:black;        
+       text-align: center;            
+ }
+
+ footer a {
+     text-align: center;
+     color:black;
+     font-weight: bold;
+ }
+
+button{
+    margin-bottom: 32px;
+    font-weight: bold;
+    cursor: pointer; 
+    background-color: rgb(136, 184, 247);
+    border-radius: 15px 0;
+    box-shadow: 0px 8px 16px rgba(162, 156, 247, 1);
+}
+button:hover{
+    text-decoration: underline;
+}
+ #button {
+     text-align: center;
+     margin-bottom: 32px;
+ }
+.hide {
+display:none;
+
+}
+#container {
+    width: 80%;
+    max-width: 980px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    display: flex;
+}
+
+#intro {
+    width: 300px;
+
+    margin-right: 20px;
+
+}
+
+main {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
