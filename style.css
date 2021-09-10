@@ -201,6 +201,34 @@ form label {
 
 }
 
+form a {
+    background: white;
+
+      width:150px;
+      height: 40px;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      border-radius: 6px;
+      
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      
+      align-self: end;
+}
+
+form a:hover{
+       
+     background-color: #0984e3;
+     color: white;
+     
+     text-decoration: none;
+
+}
+
 form button {
      background: white;
 
