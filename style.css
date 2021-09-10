@@ -1,34 +1,69 @@
+/**  comentario **/
+
 body {
     background:  rgb(182, 215, 223);
-
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     
 }
 
 footer { 
-       color:black;        
-       text-align: center;            
+              
+       text-align: center;  
+
+       font-size: 14px;
+       font-weight: 400;
+       line-height: 18px;
+       letter-spacing: 0.2px;
+       
+       color: #777;
  }
 
  footer a {
      text-align: center;
      color:black;
+
+     opacity: 0.7;
+     
+ }
+ footer a:hover{
+     color: rgb(255, 0, 128);
      font-weight: bold;
+ }
+ a {
+     color: rgb(11, 25, 221);
+     font-weight: bold;
+ }
+ a:hover{
+    color: rgb(255, 0, 128);
+    font-weight: bold;
  }
 
 button{
     margin-bottom: 32px;
     font-weight: bold;
     cursor: pointer; 
-    background-color: rgb(136, 184, 247);
-    border-radius: 15px 0;
-    box-shadow: 0px 8px 16px rgba(162, 156, 247, 1);
+    
+    background-color: rgb(90, 160, 247);
+    border-radius: 50px;
+    box-shadow: 0 4px 16px -2px black;
+    
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2;
+
 }
 button:hover{
-    text-decoration: underline;
+    color: rgb(255, 0, 128);
+     font-weight: bold;
+
 }
- #button {
-     text-align: center;
+
+#buttons {
+     display: flex;
+     justify-content: space-evenly;
+     
      margin-bottom: 32px;
  }
 .hide {
@@ -39,8 +74,7 @@ display:none;
     width: 80%;
     max-width: 980px;
 
-    margin-right: auto;
-    margin-left: auto;
+    margin:40px auto;
 
     display: flex;
 }
@@ -48,11 +82,148 @@ display:none;
 #intro {
     width: 300px;
 
-    margin-right: 20px;
+    margin-right: 50px;
 
 }
 
 main {
-    margin-top: 32px;
+    margin: 32px 0 ;
+    
+}
+
+.idea {
+    display: flex;
     margin-bottom: 32px;
+    background-color: rgb(231, 238, 240);
+    border-radius: 10px;
+    padding: 32px;
+    box-shadow: 0 4px 16px -3px black;
+    border: 1px solid rgb(139, 0, 0);
+}
+.idea img {
+    width: 60px;   
+    height: 60px;
+    margin-right: 32px;
+}
+.idea h3 {
+    margin: 0;
+}
+.idea p {
+    margin: 8px 0;
+    color: #777;
+}
+.idea .description {
+    margin:16px 0;
+     
+}
+p, .description{
+    font-size: 16px 0;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+/** modal **/
+
+#modal {
+    background:rgb(157, 73, 236);
+    
+    position: absolute;
+    top: 0;
+
+    width: 100vw;
+    height: 100vw;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.content form div:nth-child(3){
+    grid-column: span 2;
+}
+
+.content form div:nth-child(4){
+    grid-column: span 2;
+}
+.content form div:nth-child(5){
+    grid-column: span 2;
+}
+
+
+#modal .content {
+
+    margin-top: 128px;
+    color:white;    
+
+}
+
+#modal .content h1{
+
+    text-align: center;
+
+    text-transform: uppercase;
+}
+
+#modal form {
+    
+    width: 80%;
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap:20px;
+}
+
+form input, form textarea {
+ 
+    width: 100%;
+
+    padding: 12px;
+    box-sizing: border-box;
+    
+    border-radius: 6px;
+    border: 1px solid rgb(112, 7, 133);
+    box-shadow: 0 4px 16px -2px rgb(174, 86, 192);
+    
+    outline: none;
+
+    font-size: 16px;
+}
+
+form label {
+   
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+
+}
+
+form button {
+     background: white;
+
+      width:150px;
+      height: 40px;
+
+      border-radius: 6px;
+      box-shadow: 0 4px 16px -6px black;
+
+      cursor: pointer;
+
+      margin-top: 32px;
+      grid-column: 2;
+      justify-self: end;
+}
+
+form button:hover {
+     background-color: #0984e3;
+     color: white;
+     
+     text-decoration: none;
+}
+
+#modal.hide {
+    display: none;
 }

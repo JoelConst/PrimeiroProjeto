@@ -3,9 +3,12 @@
 <html>
 
   <head>
+
+    <!-- comentario -->
     <title> Casa Criativa </title>
     <meta charset="utf-8">
-
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
   </head>
@@ -39,7 +42,7 @@
         </main>
 
           <section id="buttons">
-             <button> Adiconar Ideia</button>
+             <button onclick="onOff()"> Adiconar Ideia</button>
              <button class="fat">Ver Ideias</button>
           </section>
                  
@@ -55,56 +58,105 @@
       </section>
 
        <section id="last-ideias">
-         <div class="idea">
-          <img src="https://image.flaticon.com/icons/png/512/3378/3378061.png" 
+         
+        <div class="idea">
+          <img 
+          src="https://cdn-icons-png.flaticon.com/512/2729/2729007.png" 
           alt="imagem de curso de programação">
          
-           <div class="content">
-            <h3>Cursos de Programação </h3>
-            <P>Estudo</P>
-            <div class="description">
-             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae aliquid necessitatibus consectetur in. Officiis nobis, eos veniam veritatis labore qui, porro ipsam odio hic culpa nesciunt voluptate perspiciatis quia. Iure!
-            </div>
-            <a href="#">Ir para a ideia</a>
-           </di>
+            <div class="content">
+               <h3>Cursos de Programação</h3>
+               <P>Estudo</P>
+               <div class="description">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ipsam quidem, est autem eligendi asperiores, unde error doloribus eius fugiat ratione! Inventore laboriosam, optio saepe nostrum qui vel itaque quis.
+               </div>
+               <a href="#">Ir para a ideia</a>
+          </div>
         </div>
         
         <div class="idea">
-          <img src="https://img-premium.flaticon.com/png/512/384/premium/384301.png?token=exp=1630514716~hmac=92ad90bed81915b65d085e3ce1697097" 
-          alt="imagem de exercicio fisico">
+          <img 
+           src="https://cdn-icons-png.flaticon.com/512/2729/2729005.png" 
+           alt="imagem de exercicio fisico">
          
-           <div class="content">
-            <h3>Exercicios </h3>
-            <P>Saúde</P>
-            <div class="description">
-             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae aliquid necessitatibus consectetur in. Officiis nobis, eos veniam veritatis labore qui, porro ipsam odio hic culpa nesciunt voluptate perspiciatis quia. Iure!
-            </div>
-            <a href="#">Ir para a ideia</a>
-           </di>
+            <div class="content">
+              <h3>Exercicios </h3>
+              <P>Saúde</P>
+              <div class="description">
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur quos asperiores magnam sapiente est et officiis nostrum. Fugit modi earum ullam magni enim officia, hic consequuntur iste ipsam aperiam in!
+              </div>
+              <a href="#">Ir para a ideia</a>
+           </div>
         </div>
 
         <div class="idea">
-          <img src="https://cdn-icons-png.flaticon.com/512/620/620733.png" 
+          <img 
+          src="https://cdn-icons-png.flaticon.com/512/2729/2729027.png" 
           alt="imagem de meditação">
          
            <div class="content">
-            <h3>meditação </h3>
-            <P>Mentalidade</P>
-            <div class="description">
-             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae aliquid necessitatibus consectetur in. Officiis nobis, eos veniam veritatis labore qui, porro ipsam odio hic culpa nesciunt voluptate perspiciatis quia. Iure!
-            </div>
-            <a href="#">Ir para a ideia</a>
+              <h3>meditação </h3>
+              <P>Mentalidade</P>
+              <div class="description">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptas pariatur, corrupti in eligendi molestiae fugit ratione ab optio sit perspiciatis praesentium facilis similique deleniti distinctio perferendis dolores sequi explicabo!
+              </div>
+              <a href="#">Ir para a ideia</a>
            </di>
         </div>
 
        </section>
 
-    </di>
-   
-          <script src="script.js"></script>
+    </div>
+    
+    <!-- modal-->
+
+        <div id="modal">
+           <div class="content">
+                <h1>Nova Ideia</h1>
+
+                <form action="">
+                     
+                  <div class="input-wrapper">
+                      <label for="title">Titulo da Ideia</label>                
+                      <input type="text" name="title">
+                  </div>
+
+                     <div class="input-wrapper">
+                       <label for="category">Categoria</label>                
+                       <input type="text" name="category">
+                    </div>
+
+                    <div class="input-wrapper"> 
+                      <label for="image">Link da imagem</label>                
+                      <input type="url" name="image">
+                    </div>
+
+                    <div class="input-wrapper">
+                       <label for="description">Digite uma descriãção para essa idea</label>                
+                       <textarea name="description" cols="30"rows="10"></textarea>
+                    </div>
+
+                    <div class="input-wrapper">
+                      <label for="link">Link da Ideia</label>                
+                      <input type="url" name="link">
+                    </div>
+
+                   <a href="#"" onclik="onOff">Voltar</a>
+                  <button>Salvar</button>
+
+
+                </form>
+
+              </div>
+
+            </div>  
+
+
+            <script src="script.js"></script>
+
+       </body>
+
+    </html>
 
 
 
-  </body>
-
-</html>
